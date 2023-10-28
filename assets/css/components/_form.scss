@@ -1,0 +1,25 @@
+.register{
+    .form{
+        &-group{
+            margin-bottom: 10px;
+            label{
+                display: block;
+                margin-bottom: 10px;
+            }
+            .form-control{
+                padding: 10px;
+                box-sizing: border-box;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px){
+    @for $x from 1 through $coloumn{
+        .col#{$x}-md{
+            width: calc((100%/($coloumn/$x))) - 3%;
+            margin: 1.5%;
+        }
+    }
+}

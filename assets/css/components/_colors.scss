@@ -1,0 +1,12 @@
+$primary:black;
+$secondary:blue;
+$third:white;
+$fourth:#333;
+$fifth: rgb(166,3,17);
+$btnlink:white;
+$colorrage:lighten(blue,20%);
+$colorrage2:darken(blue,20%);
+.bg-black{
+    background: $primary;
+    color: $third;
+}

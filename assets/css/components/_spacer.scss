@@ -1,0 +1,14 @@
+.spacerfirst{
+    padding: 5% 0;
+}
+.spacersection{
+    padding: 0 0 5%;
+}
+.spacerend{
+    padding: 2% 0 2%;
+}
+@for $i from 1 through 10{
+    .spacer#{$i*10}{
+        margin-top: calc($i*10) * 1px;
+    }
+}

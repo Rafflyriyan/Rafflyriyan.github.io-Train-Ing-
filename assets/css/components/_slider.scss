@@ -1,0 +1,132 @@
+.sliders{
+    position: relative;
+    height: 800px;
+    width: 100%;
+    overflow: hidden;
+}
+#slider1,#slider2,#slider3{
+    display: none;
+}
+.slider1,.slider2,.slider3{
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    z-index: 0;
+    transform: scale(1);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 2s;
+}
+.sliderNav label{
+    opacity: 0.8;
+    filter: grayscale(100%);
+}
+#slider1:checked ~ .slider1{
+    opacity: 1;
+    transform: scale(1.3);
+}
+#slider1:checked~ .sliderNav label:nth-child(1){
+    opacity: 1;
+    filter: grayscale(0%);
+    img{
+        border: 3px solid white;
+    }
+}
+#slider2:checked ~ .slider2{
+    opacity: 1;
+    transform: scale(1.3);
+}
+#slider2:checked~ .sliderNav label:nth-child(2){
+    opacity: 1;
+    filter: grayscale(0%);
+    img{
+        border: 3px solid white;
+    }
+}
+#slider3:checked ~ .slider3{
+    opacity: 1;
+    transform: scale(1.3);
+}
+#slider3:checked~ .sliderNav label:nth-child(3){
+    opacity: 1;
+    filter: grayscale(0%);
+    img{
+        border: 3px solid white;
+    }
+}
+.sliderNav{
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    left: 26%;
+}
+
+@media screen and (max-width:1015px){
+    .sliders{
+        height: 600px;
+    }
+    .sliderNav{
+        top: 70%;
+    }
+    .img-thumb{
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:737px){
+    .sliders{
+        height: 500px;
+    }
+    .sliderNav{
+        top: 80%;
+    }
+    .img-thumb{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .sliders{
+        height: 400px;
+    }
+    .sliderNav{
+        top: 80%;
+    }
+    .img-thumb{
+        width: 90px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .sliders{
+        height: 400px;
+    }
+    .sliderNav{
+        top: 80%;
+    }
+    .img-thumb{
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:580px){
+    .sliders{
+        height: 400px;
+    }
+    .sliderNav{
+        top: 80%;
+    }
+    .img-thumb{
+        width: 80px;
+    }
+}
+
+@media screen and (max-width:500px){
+    .sliders{
+        height: 400px;
+    }
+    .sliderNav{
+        top: 75%;
+    }
+    .img-thumb{
+        width: 80px;
+    }
+}

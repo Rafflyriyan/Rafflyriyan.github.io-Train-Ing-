@@ -1,0 +1,140 @@
+$font1: 'Merriweather', serif;
+$font2:'Poppins', sans-serif;
+
+p{
+    font-size: 16px;
+    line-height: 190%;
+}
+
+h5{
+    font-size: 16px;
+    line-height: 190%;
+}
+
+h4{
+    font-size: calc(16 * 1.4) * 1px;
+    line-height: 190%;
+}
+
+h3{
+    font-size: calc((16 * 1.4) * 1.2) * 1px;
+    line-height: 190%;
+}
+
+h2{
+    font-size: calc(23.04 * 1.4) * 1px;
+    line-height: 120%;
+}
+
+h1{
+    font-size: calc(27.648 * 1.4) * 1px;
+    line-height: 120%;
+}
+
+@media screen and (max-width:976px) {
+    h5{
+        font-size: 16px;
+        line-height: 190%;
+    }
+    
+    h4{
+        font-size: calc(16 * 1.2) * 1px;
+        line-height: 190%;
+    }
+    
+    h3{
+        font-size: calc((16 * 1.2) * 1.2) * 1px;
+        line-height: 190%;
+    }
+    
+    h2{
+        font-size: calc(23.04 * 1.2) * 1px;
+        line-height: 120%;
+    }
+    
+    h1{
+        font-size: calc(27.648 * 1.2) * 1px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-width:866px) {
+    h5{
+        font-size: 16px;
+        line-height: 190%;
+    }
+    
+    h4{
+        font-size: calc(16 * 1.1) * 1px;
+        line-height: 190%;
+    }
+    
+    h3{
+        font-size: calc((16 * 1.1) * 1.2) * 1px;
+        line-height: 190%;
+    }
+    
+    h2{
+        font-size: calc(23.04 * 1.1) * 1px;
+        line-height: 120%;
+    }
+    
+    h1{
+        font-size: calc(27.648 * 1.1) * 1px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-width:580px) {
+    h5{
+        font-size: 16px;
+        line-height: 190%;
+    }
+    
+    h4{
+        font-size: calc(16 * 1.0) * 1px;
+        line-height: 190%;
+    }
+    
+    h3{
+        font-size: calc((16 * 1.0) * 1.2) * 1px;
+        line-height: 190%;
+    }
+    
+    h2{
+        font-size: calc(23.04 * 1.0) * 1px;
+        line-height: 120%;
+    }
+    
+    h1{
+        font-size: calc(27.648 * 1.0) * 1px;
+        line-height: 120%;
+    }
+}
+
+@media screen and (max-width:538px) {
+    h5{
+        font-size: 16px;
+        line-height: 180%;
+    }
+    
+    h4{
+        font-size: calc(16 * 1.0) * 1px;
+        line-height: 180%;
+    }
+    
+    h3{
+        font-size: calc((16 * 1.0) * 1.2) * 1px;
+        line-height: 180%;
+    }
+    
+    h2{
+        font-size: calc(23.04 * 1.0) * 1px;
+        line-height: 110%;
+    }
+    
+    h1{
+        font-size: calc(27.648 * 1.0) * 1px;
+        line-height: 110%;
+    }
+}

@@ -1,0 +1,86 @@
+.nav{
+    top: 0;
+    left: 0;
+    background: $third;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    .logo{
+        margin: 1.5%;
+            a{
+                text-decoration: none;
+                color: $primary;
+            }
+    }
+    .menuicon{
+        display: none;
+        @media screen and (max-width:517px) {
+            display: block;
+        }
+    }
+    .menu{
+        margin: 1.5%;
+        ul{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            li{
+                position: relative;
+                a{
+                    padding: 10px;
+                    text-decoration: none;
+                    color: $primary;
+                }
+                .submenu{
+                    position: absolute;
+                    display: block;
+                    background: $primary;
+                    width: 200px;
+                    display: none;
+                    li{
+                        a{
+                            color:$third ;
+                            padding: 5px;
+                            display: block;
+                            &:hover{
+                                background: $fourth;
+                            }
+                        }
+                    }
+                }
+                &:hover .submenu{
+                    display: block;
+                }
+            }
+        }
+
+        @media screen and (max-width:517px) {
+            display: none;
+        }
+    }
+    #menuon:checked ~ .menu{
+        display: block;
+        position: absolute;
+        top: 50px;
+        background: $primary;
+        width: 100%;
+        ul{
+            display: block;
+            li{
+                a{
+                    color: $third;
+                    display: block;
+                }
+                .submenu{
+                    position: relative;
+                    li{
+                        a{
+                            padding: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
